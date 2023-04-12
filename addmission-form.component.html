@@ -1,0 +1,96 @@
+
+
+
+
+
+
+<form [formGroup]="mainForm">
+
+<div formGroupName="NameFields">
+    <label for="">FirstName</label>
+    <input type="text" formControlName="firstName"><br><br>
+    <label for="">MiddleName</label>
+    <input type="text" formControlName="MiddleName"><br><br>
+    <label for="">LastName</label>
+    <input type="text" formControlName="LastName"><br><br>
+</div>
+
+<label for="">DOB</label>
+<input type="date" formControlName="DOB"><br><br>
+<label for="">Place of Birth</label>
+<input type="text" formControlName="pob"><br><br>
+<label for="">First Language</label>
+<input type="text" formControlName="fLanguage"><br><br>
+
+<div formGroupName="AddressFields">
+    <label for="">City</label>
+    <input type="text" formControlName="city"><br><br>
+    <label for="">State</label>
+    <input type="text" formControlName="state"><br><br>
+    <label for="">Country</label>
+    <input type="text" formControlName="country"><br><br>
+    <label for="">City</label>
+    <input type="number" formControlName="pincode"><br><br>
+</div>
+
+
+<div formGroupName="fatherFields">
+    <label for="">FirstName</label>
+    <input type="text" formControlName="FfirstName"><br><br>
+    <label for="">MiddleName</label>
+    <input type="text" formControlName="FMiddleName"><br><br>
+    <label for="">LastName</label>
+    <input type="text" formControlName="FLastName"><br><br>
+    <label for="">Email</label>
+    <input type="email" formControlName="Femail"><br><br>
+    <label for="">Education Qualification</label>
+    <input type="text" formControlName="Fequali"><br><br>
+    <label for="">Profession </label>
+    <input type="text" formControlName="Fprofession"><br><br>
+    <label for="">Designation</label>
+    <input type="text" formControlName="Fdesignation"><br><br>
+    <label for="">Phone</label>
+    <input type="tel" formControlName="Fphone"><br><br>
+</div>
+
+
+<div formGroupName="motherFields">
+    <label for="">FirstName</label>
+    <input type="text" formControlName="MfirstName"><br><br>
+    <label for="">MiddleName</label>
+    <input type="text" formControlName="MMiddleName"><br><br>
+    <label for="">LastName</label>
+    <input type="text" formControlName="MLastName"><br><br>
+    <label for="">Email</label>
+    <input type="email" formControlName="Memail"><br><br>
+    <label for="">Education Qualification</label>
+    <input type="text" formControlName="Mequali"><br><br>
+    <label for="">Profession </label>
+    <input type="text" formControlName="Mprofession"><br><br>
+    <label for="">Designation</label>
+    <input type="text" formControlName="Mdesignation"><br><br>
+    <label for="">Phone</label>
+    <input type="tel" formControlName="Mphone"><br><br>
+</div>
+
+
+<div formGroupName="EmergencyContact">
+    <label for="">Relation</label>
+    <input type="text" formControlName="relation"><br><br>
+    <label for="">Contact number</label>
+    <input type="tel" formControlName="EmNmber"><br><br>
+</div>
+
+
+<label for="">Reference Details</label>
+<input type="text" formControlName="refDeatils"><br><br>
+ <label for="">Reference Through</label>
+<input type="text" formControlName="refThrough"><br><br>
+ <label for="">Address with Tel No:</label>
+<input type="text" formControlName="addresswithtel"><br><br>
+              
+
+
+
+    <button (click)="getData()">Submit Data</button>
+</form>
